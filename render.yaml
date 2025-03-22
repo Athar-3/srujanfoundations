@@ -1,10 +1,10 @@
 services:
   - type: web
     name: edusec
-    env: php
     plan: free
     buildCommand: ""
     startCommand: "php -S 0.0.0.0:10000 -t public_html"
     envVars:
       - key: DATABASE_URL
-        value: "mysql://shkathar:9665@tipu@sql.freedb.tech/yourdbname"
+        value: "mysql://shkathar:yourpassword@sql.freedb.tech/freedb_srujandb"
+

@@ -2,9 +2,11 @@ services:
   - type: web
     name: edusec
     plan: free
-    buildCommand: ""
-    startCommand: "php -S 0.0.0.0:10000 -t public_html"
+    env: docker
+    repo: https://github.com/Athar-3/srujanfoundations.git
+    region: India
     envVars:
       - key: DATABASE_URL
         value: "mysql://shkathar:yourpassword@sql.freedb.tech/freedb_srujandb"
+
 

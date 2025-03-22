@@ -4,7 +4,7 @@ services:
     plan: free
     env: docker
     repo: https://github.com/Athar-3/srujanfoundations.git
-    region: India
+    region: oregon
     envVars:
       - key: DATABASE_URL
         value: "mysql://shkathar:yourpassword@sql.freedb.tech/freedb_srujandb"

@@ -2,10 +2,13 @@
 $error = '';
 if($_POST) {
 
-$connect = mysql_connect($_POST['dbHost'], $_POST['dbUser'], $_POST['dbPass']); 
+//$connect = mysql_connect($_POST['dbHost'], $_POST['dbUser'], $_POST['dbPass']); 
+$connect = mysqli_connect($_POST['dbHost'], $_POST['dbUser'], $_POST['dbPass'], $_POST['dbName']);
+
 
   if($connect) {
-	if(mysql_select_db($_POST['dbName'])) {
+	//if(mysql_select_db($_POST['dbName'])) {
+	
 		//$dir =  $_SERVER['SERVER_NAME']. $_SERVER['REQUEST_URI']; 
 		//$redirectUrl = str_replace("configForm.php","site/index", $dir);
 		//print $redirectUrl; exit;
